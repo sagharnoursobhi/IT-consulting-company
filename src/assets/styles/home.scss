@@ -1,0 +1,63 @@
+@import './_components.scss';
+
+.home-container {
+
+    .home-desc {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 50px 40px;
+    
+        .section {
+            padding: 40px;
+            
+            &.section-border-both-sides {
+                border-right: 1px solid $border_color_gray;
+                border-bottom: 1px solid $border_color_gray;
+            }
+
+            &.section-border-one-side {
+                border-bottom: 1px solid $border_color_gray;
+            }
+
+            &.right {
+                border-right: 1px solid $border_color_gray;
+            }
+
+    
+            .title {
+                color: $brown_text_color;
+                text-transform: capitalize;
+                font-size: 20px;
+                font-weight: 500;
+            }
+    
+            .desc {
+                color: $blue_text_color;
+                font-weight: 500;
+                font-size: 35px;
+    
+                &.desc-big {
+                    font-size: 50px;
+                    font-weight: 700;
+                }
+            }
+    
+            .section-btn {
+                background-color: transparent;
+                border: 1px solid $brown_text_color;
+                border-radius: 1px;
+                color: $brown_text_color;
+                transition: 0.2s;
+                margin-top: 15px;
+                padding: 14px 30px;
+                font-size: 18px;
+    
+                &:hover {
+                    color: $white-color;
+                    background-color: $btn_background_color;
+                }
+            }
+        }
+    }
+    
+}

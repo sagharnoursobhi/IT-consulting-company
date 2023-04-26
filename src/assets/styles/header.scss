@@ -1,0 +1,47 @@
+@import './_components.scss';
+
+.header {
+    height: 600px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    background-color: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60));
+
+    &.home-page {
+        background: url('../images/home-page.jpg') no-repeat center center; 
+    }
+
+    .navbar-container {
+        &.navbar-bg {
+            background: transparent;
+        }
+        .nav-icon {
+            width: 100px;
+        }
+        .navbar-custom-container {
+            max-height: 100px;
+        }
+
+        .nav-title {
+            color: $white-color;
+        }
+
+        .links-container {
+            .nav-link {
+                color: $white-color;
+                transition: 0.3s;
+                font-weight: 500;
+
+                &.active {
+                    color: $navbar-link-color;
+                }
+
+                &:hover {
+                    color: $navbar-link-color;
+                }
+            }
+        }
+    }
+}
