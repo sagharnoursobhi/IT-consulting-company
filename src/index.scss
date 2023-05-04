@@ -8,6 +8,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   padding: 0;
   background-color: $body_background;
+
+  ::selection {
+    color: black;
+    background-color: #987850;
+  }
 }
 
 img {
@@ -22,4 +27,5 @@ button {
 
 a {
   cursor: pointer;
+  text-decoration: none;
 }

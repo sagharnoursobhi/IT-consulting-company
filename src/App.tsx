@@ -8,8 +8,6 @@ import NoPage from './pages/NoPage';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Footer from './components/Footer';
 import AppNavbar from './components/AppNavbar';
-import { useEffect, useState, useMemo } from 'react';
-import { BackgroundTitle }  from './models/general.type';
 
 /* interface Props {
   isAuth: React.Dispatch<React.SetStateAction<boolean>> receive it as props

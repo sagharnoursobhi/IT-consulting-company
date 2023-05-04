@@ -7,10 +7,10 @@
     -o-background-size: cover;
     background-size: cover;
     position: relative;
-    background-color: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60));
 
     &.home-page {
-        background: url('../images/home-page.jpg') no-repeat center center; 
+        background:  linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url('../images/home-page.jpg') no-repeat center center; 
     }
 
     .navbar-container {
@@ -33,6 +33,7 @@
                 color: $white-color;
                 transition: 0.3s;
                 font-weight: 500;
+                font-size: 20px;
 
                 &.active {
                     color: $navbar-link-color;

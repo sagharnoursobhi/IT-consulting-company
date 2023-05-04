@@ -41,6 +41,32 @@
                     font-weight: 700;
                 }
             }
+
+            .services-detail {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+
+                .service {
+                    font-size: 27px;
+                    border: 1px solid transparent;
+                    transition: 0.4s border-color;
+                    padding: 20px;
+                    cursor: pointer;
+                    border-radius: 3px;
+
+                    .service-number {
+                        width: 261px;
+                        border-top: 1px solid $border_color_gray;
+                        margin-top: 20px;
+                    }
+
+                    &:hover {
+                        background-color: $white-color;
+                        border-color: $border_color_gray;
+                    }
+                }
+            }
     
             .section-btn {
                 background-color: transparent;
@@ -55,6 +81,99 @@
                 &:hover {
                     color: $white-color;
                     background-color: $btn_background_color;
+                }
+            }
+        }
+    }
+
+    .home-featured-container {
+        position: relative;
+
+        ::before {    
+            content: "";
+            background: url('../images/featured-home.jpg') no-repeat center / cover;
+            filter: brightness(30%);
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            z-index: -1;
+        }
+
+        .home-featured {
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            height: 800px;
+            color: $white-color;
+    
+            .section {
+                .featured-title {
+                    font-size: 20px;
+                    font-weight: 600;
+
+                    &_with-btn {
+                        font-size: 40px;
+                    }
+                }
+        
+                .featured-desc {
+                    font-size: 60px;
+
+                    &_with-btn {
+                        font-size: 25px;
+
+                        .desc-btn {
+                            color: $white-color;
+                            transition: 0.3s;
+                            cursor: pointer;
+    
+                            &:hover {
+                                color: rgb(255 255 255 / 70%);
+                            }
+                        }
+                    } 
+                }
+    
+            }
+        }
+
+    }
+
+    .home-account-container {
+        background-color: #987850;
+
+        .home-account {
+            color: $white-color;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: start;
+    
+            h1.acc-title {
+                font-size: 60px;
+                font-weight: 600;
+            }
+    
+            p.acc-desc {
+                font-size: 20px;
+            }
+    
+            button.acc-btn {
+                border: 1px solid transparent;
+                border-radius: 2px;
+                background-color: $white-color;
+                transition: 0.3s;
+                padding: 15px 30px;
+                font-size: 20px;
+                text-transform: uppercase;
+    
+                &:hover {
+                    color: $white-color;
+                    background-color: transparent;
+                    border-color: $white-color;
                 }
             }
         }

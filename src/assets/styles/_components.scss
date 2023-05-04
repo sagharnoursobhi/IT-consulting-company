@@ -2,11 +2,17 @@
 $navbar-link-color: #b16d1b;
 $white-color: rgba(255, 255, 255, 0.894);
 $black-color: rgb(0 0 0 / 76%);
+$gray_color: rgba(19,65,84,0.82);;
 $body_background: #faf6f2;
 $brown_text_color: #987850;
 $btn_background_color: #987850;
 $blue_text_color: #134054;
 $border_color_gray: #8080806e;
+$text_color_light_brown: #bc986d;
+
+.border-white-color {
+    border-color: rgb(255 255 255 / 42%)!important;
+}
 
 .header-title {
     color: $white-color;
